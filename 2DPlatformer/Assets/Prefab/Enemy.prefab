@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 9028187509864956728}
   - component: {fileID: 3482730354951153343}
   - component: {fileID: 3256640604800955394}
+  - component: {fileID: -1548829158732705362}
+  - component: {fileID: 981503929750739262}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -137,8 +139,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c5ab1783461ecd45be939c82ee4e9d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _speed: 1
+--- !u!114 &-1548829158732705362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8509764170888629875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51848a68bd2db6441a27c5d16444da39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &981503929750739262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8509764170888629875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81ae51c9d739d6b419bba15cebfc99ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _enemyPoints: {fileID: 0}
   _pathPoints: []
-  _speed: 1
   _closeDistance: 0.1
   _pointNumber: 0

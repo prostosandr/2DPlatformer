@@ -132,7 +132,12 @@ GameObject:
   - component: {fileID: 116955183}
   - component: {fileID: 116955186}
   - component: {fileID: 116955187}
+  - component: {fileID: 116955191}
+  - component: {fileID: 116955190}
+  - component: {fileID: 116955189}
   - component: {fileID: 116955188}
+  - component: {fileID: 116955192}
+  - component: {fileID: 116955193}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -308,9 +313,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c1dd134cdc8b744f9d1c7952516e986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 3
-  _rayDistance: 0.5
+  _speedX: 3
   _jumpForce: 7
+--- !u!114 &116955189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116955182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fde2284e0d5e8644790b9a94d42226b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &116955190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116955182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a7d0a2af54aa834b9c4c333949ce6bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &116955191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116955182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3035b001216a2849be38771fde64530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &116955192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116955182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f072f9dcd0c1a92468ff9cdadb3ca0db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &116955193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116955182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4de62cdb9a7c084193baced7a019b0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: {fileID: 0}
 --- !u!1 &240806066
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,7 +531,7 @@ MonoBehaviour:
   _prefab: {fileID: 4328857752609018200, guid: bdde6ba29cd2d124ca6495644e7a3bf0, type: 3}
   _poolCapacity: 1
   _poolMaxSize: 1
-  _numberOfEnemies: 0
+  _numberOfMoney: 0
 --- !u!114 &488074718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2270,7 +2335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05b325ea71bd66d4fb478f4384d64d95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnPoints:
+  _points:
   - {fileID: 1919145171}
   - {fileID: 1019381750}
   - {fileID: 534185062}
@@ -2350,7 +2415,7 @@ GameObject:
   - component: {fileID: 1022852813}
   - component: {fileID: 1022852814}
   m_Layer: 0
-  m_Name: EnemyPoints
+  m_Name: EnemyPathPoints (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2435,7 +2500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2960859858527278620, guid: 5c979d627c693824c95606593058665f, type: 3}
       propertyPath: m_Name
-      value: EnemyPoint (1)
+      value: EnemyPathPoint(1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2458,7 +2523,7 @@ GameObject:
   - component: {fileID: 1356789957}
   - component: {fileID: 1356789958}
   m_Layer: 0
-  m_Name: EnemyPoints
+  m_Name: EnemyPathPoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2501,6 +2566,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 337674305}
     m_Modifications:
+    - target: {fileID: 981503929750739262, guid: 0d80cde7b16b1424f8353713911b3a46, type: 3}
+      propertyPath: _enemyPoints
+      value: 
+      objectReference: {fileID: 1022852814}
+    - target: {fileID: 981503929750739262, guid: 0d80cde7b16b1424f8353713911b3a46, type: 3}
+      propertyPath: _enemyPathPoints
+      value: 
+      objectReference: {fileID: 1022852814}
+    - target: {fileID: 981503929750739262, guid: 0d80cde7b16b1424f8353713911b3a46, type: 3}
+      propertyPath: _pathPoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 981503929750739262, guid: 0d80cde7b16b1424f8353713911b3a46, type: 3}
+      propertyPath: '_pathPoints.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2060251668}
+    - target: {fileID: 981503929750739262, guid: 0d80cde7b16b1424f8353713911b3a46, type: 3}
+      propertyPath: '_pathPoints.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1917909397}
+    - target: {fileID: 981503929750739262, guid: 0d80cde7b16b1424f8353713911b3a46, type: 3}
+      propertyPath: _currentPathPoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 981503929750739262, guid: 0d80cde7b16b1424f8353713911b3a46, type: 3}
+      propertyPath: '_currentPathPoints.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2060251668}
+    - target: {fileID: 981503929750739262, guid: 0d80cde7b16b1424f8353713911b3a46, type: 3}
+      propertyPath: '_currentPathPoints.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1917909397}
     - target: {fileID: 3256640604800955394, guid: 0d80cde7b16b1424f8353713911b3a46, type: 3}
       propertyPath: _enemyPoints
       value: 
@@ -2616,7 +2713,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2960859858527278620, guid: 5c979d627c693824c95606593058665f, type: 3}
       propertyPath: m_Name
-      value: EnemyPoint (3)
+      value: EnemyPathPoint (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3679,7 +3776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2960859858527278620, guid: 5c979d627c693824c95606593058665f, type: 3}
       propertyPath: m_Name
-      value: EnemyPoint (2)
+      value: EnemyPathPoint (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3741,7 +3838,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2960859858527278620, guid: 5c979d627c693824c95606593058665f, type: 3}
       propertyPath: m_Name
-      value: EnemyPoint
+      value: EnemyPathPoint
       objectReference: {fileID: 0}
     - target: {fileID: 5188851058192065569, guid: 5c979d627c693824c95606593058665f, type: 3}
       propertyPath: m_Enabled
@@ -3765,6 +3862,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 337674305}
     m_Modifications:
+    - target: {fileID: 981503929750739262, guid: 0d80cde7b16b1424f8353713911b3a46, type: 3}
+      propertyPath: _enemyPoints
+      value: 
+      objectReference: {fileID: 1356789958}
+    - target: {fileID: 981503929750739262, guid: 0d80cde7b16b1424f8353713911b3a46, type: 3}
+      propertyPath: _enemyPathPoints
+      value: 
+      objectReference: {fileID: 1356789958}
+    - target: {fileID: 981503929750739262, guid: 0d80cde7b16b1424f8353713911b3a46, type: 3}
+      propertyPath: _pathPoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 981503929750739262, guid: 0d80cde7b16b1424f8353713911b3a46, type: 3}
+      propertyPath: '_pathPoints.Array.data[0]'
+      value: 
+      objectReference: {fileID: 4885981118866665619}
+    - target: {fileID: 981503929750739262, guid: 0d80cde7b16b1424f8353713911b3a46, type: 3}
+      propertyPath: '_pathPoints.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1272383689}
+    - target: {fileID: 981503929750739262, guid: 0d80cde7b16b1424f8353713911b3a46, type: 3}
+      propertyPath: _currentPathPoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 981503929750739262, guid: 0d80cde7b16b1424f8353713911b3a46, type: 3}
+      propertyPath: '_currentPathPoints.Array.data[0]'
+      value: 
+      objectReference: {fileID: 4885981118866665619}
+    - target: {fileID: 981503929750739262, guid: 0d80cde7b16b1424f8353713911b3a46, type: 3}
+      propertyPath: '_currentPathPoints.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1272383689}
     - target: {fileID: 3256640604800955394, guid: 0d80cde7b16b1424f8353713911b3a46, type: 3}
       propertyPath: _enemyPoints
       value: 
