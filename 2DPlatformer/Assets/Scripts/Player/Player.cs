@@ -11,6 +11,16 @@ public class Player : MonoBehaviour
     private PlayerMover _mover;
     private StateAnimator _stateAnimator;
 
+    private void OnEnable()
+    {
+        _inputReader.IsJumping += Jump;
+    }
+
+    private void OnDisable()
+    {
+        _inputReader.IsJumping -= Jump;
+    }
+
     public enum States
     {
         Idle = 0,
@@ -37,10 +47,12 @@ public class Player : MonoBehaviour
         if (_groundDetector.IsGround && _inputReader.Direction == Zero)
             _stateAnimator.SetAnimation((int)States.Idle);
 
-        if (_inputReader.GetIsJump() && _groundDetector.IsGround)
-            _mover.Jump();
-
         if (_groundDetector.IsGround == false)
             _stateAnimator.SetAnimation((int)States.Jump);
+    }
+
+    private void Jump(bool isJump)
+    {
+        _mover.Jump();
     }
 }

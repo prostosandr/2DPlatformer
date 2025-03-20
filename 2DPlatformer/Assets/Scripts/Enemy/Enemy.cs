@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(PatrolLogic), typeof(EnemyMover))]
@@ -13,21 +12,11 @@ public class Enemy : MonoBehaviour
         _enemyMover = GetComponent<EnemyMover>();
     }
 
-    private void Start()
+    private void Update()
     {
-        StartCoroutine(Moving());
-    }
-
-    private IEnumerator Moving()
-    {
-        while (enabled)
-        {
-            if (_patrolLogic.Distance > _patrolLogic.CloseDistance)
-                _enemyMover.Move(_patrolLogic.NextPoint);
-            else
-                _patrolLogic.ReceiveNextPoint();
-
-            yield return null;
-        }
+        if (_patrolLogic.DistanceToNextPoint > _patrolLogic.CloseDistance)
+            _enemyMover.Move(_patrolLogic.NextPoint);
+        else
+            _patrolLogic.ReceiveNextPoint();
     }
 }

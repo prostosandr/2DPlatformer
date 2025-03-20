@@ -8,10 +8,10 @@ public class MoneyPool : MonoBehaviour
     [SerializeField] private int _poolMaxSize;
     [SerializeField] private int _numberOfMoney;
 
+    private ObjectPool<Money> _pool;
+
     public int NumberOMoney => _numberOfMoney;
     public int PoolCapacity => _poolCapacity;
-
-    private ObjectPool<Money> _pool;
 
     private void Awake()
     {

@@ -29,11 +29,12 @@ public class PlayerMover : MonoBehaviour
 
     private void TurnTorwards(float direction)
     {
-        int one = 1;
+        Vector2 rightLook = new(1, 1);
+        Vector2 leftLook = new(-1, 1);
 
         if (direction > Zero)
-            transform.localScale = new Vector2(one, one);
+            transform.localScale = rightLook;
         else if (direction < Zero)
-            transform.localScale = new Vector2(-one, one);
+            transform.localScale = leftLook;
     }
 }

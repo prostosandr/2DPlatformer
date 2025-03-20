@@ -3,8 +3,6 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class StateAnimator : MonoBehaviour
 {
-    private const string State = "State";
-
     private Animator _animator;
 
     private void Awake()
@@ -14,6 +12,6 @@ public class StateAnimator : MonoBehaviour
 
     public void SetAnimation(int value)
     {
-        _animator.SetInteger(State, value);
+        _animator.SetInteger(PlayerAnimatorData.Params.State, value);
     }
 }

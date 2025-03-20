@@ -7,11 +7,11 @@ public class PatrolLogic : MonoBehaviour
     [SerializeField] private float _closeDistance;
     [SerializeField] private int _pointNumber;
 
-    private Vector2 _nextPoint;
+    private Vector3 _nextPoint;
 
     public float CloseDistance => _closeDistance;
-    public Vector2 NextPoint => _nextPoint;
-    public float Distance => Vector2.Distance(transform.position, _nextPoint);
+    public Vector3 NextPoint => _nextPoint;
+    public float DistanceToNextPoint => (_nextPoint - transform.position).sqrMagnitude;
 
     private void Awake()
     {
@@ -33,14 +33,6 @@ public class PatrolLogic : MonoBehaviour
 
     public void ReceiveNextPoint()
     {
-        int minNubmer = 0;
-        int one = 1;
-
-        if (_pointNumber < _currentPathPoints.Length - one)
-            _pointNumber++;
-        else
-            _pointNumber = minNubmer;
-
-        _nextPoint = _currentPathPoints[_pointNumber].transform.position;
+        _nextPoint = _currentPathPoints[_pointNumber++ % _currentPathPoints.Length].transform.position;
     }
 }
