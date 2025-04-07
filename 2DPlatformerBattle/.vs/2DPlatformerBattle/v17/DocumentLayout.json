@@ -1,0 +1,328 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\assets\\scripts\\enemy\\playerdetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\playerdetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\assets\\scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\assets\\scripts\\enemy\\enemyraycast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemyraycast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|g:\\git\\2dplatformerbattle\\2dplatformerbattle\\assets\\scripts\\enemy\\enemypatrollogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemypatrollogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\assets\\scripts\\player\\playermover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\assets\\scripts\\combatparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\combatparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\assets\\scripts\\money.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\money.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\assets\\scripts\\spawner\\moneypool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawner\\moneypool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\assets\\scripts\\spawner\\firstaidkitspool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawner\\firstaidkitspool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\assets\\scripts\\spawner\\lootspawnpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawner\\lootspawnpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\assets\\scripts\\spawner\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawner\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\assets\\scripts\\player\\playerlootcollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerlootcollector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\assets\\scripts\\spawner\\lootparent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawner\\lootparent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\assets\\scripts\\ground.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ground.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\assets\\scripts\\player\\grounddetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\grounddetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\assets\\scripts\\enemy\\enemypathpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemypathpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\assets\\scripts\\firstaidkit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\firstaidkit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\assets\\scripts\\enemy\\enemymover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemymover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerDetector.cs",
+              "DocumentMoniker": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Enemy\\PlayerDetector.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\PlayerDetector.cs",
+              "ToolTip": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Enemy\\PlayerDetector.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\PlayerDetector.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T12:42:29.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnemyRaycast.cs",
+              "DocumentMoniker": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Enemy\\EnemyRaycast.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyRaycast.cs",
+              "ToolTip": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Enemy\\EnemyRaycast.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyRaycast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T07:13:44.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Enemy\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Enemy.cs",
+              "ToolTip": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Enemy\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\Enemy.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowD4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T07:30:44.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GroundDetector.cs",
+              "DocumentMoniker": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Player\\GroundDetector.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\GroundDetector.cs",
+              "ToolTip": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Player\\GroundDetector.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\GroundDetector.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T12:06:14.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Ground.cs",
+              "DocumentMoniker": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Ground.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Ground.cs",
+              "ToolTip": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Ground.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Ground.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T12:06:09.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LootParent.cs",
+              "DocumentMoniker": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Spawner\\LootParent.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Spawner\\LootParent.cs",
+              "ToolTip": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Spawner\\LootParent.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Spawner\\LootParent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T11:44:34.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PlayerLootCollector.cs",
+              "DocumentMoniker": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Player\\PlayerLootCollector.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerLootCollector.cs",
+              "ToolTip": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Player\\PlayerLootCollector.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerLootCollector.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T03:05:48.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Spawner.cs",
+              "DocumentMoniker": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Spawner\\Spawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Spawner\\Spawner.cs",
+              "ToolTip": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Spawner\\Spawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Spawner\\Spawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T02:50:22.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LootSpawnPoints.cs",
+              "DocumentMoniker": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Spawner\\LootSpawnPoints.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Spawner\\LootSpawnPoints.cs",
+              "ToolTip": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Spawner\\LootSpawnPoints.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Spawner\\LootSpawnPoints.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T02:45:23.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FirstAidKitsPool.cs",
+              "DocumentMoniker": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Spawner\\FirstAidKitsPool.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Spawner\\FirstAidKitsPool.cs",
+              "ToolTip": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Spawner\\FirstAidKitsPool.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Spawner\\FirstAidKitsPool.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T02:45:57.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MoneyPool.cs",
+              "DocumentMoniker": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Spawner\\MoneyPool.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Spawner\\MoneyPool.cs",
+              "ToolTip": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Spawner\\MoneyPool.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Spawner\\MoneyPool.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T02:45:14.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Money.cs",
+              "DocumentMoniker": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Money.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Money.cs",
+              "ToolTip": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Money.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Money.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T02:44:55.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CombatParameters.cs",
+              "DocumentMoniker": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\CombatParameters.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CombatParameters.cs",
+              "ToolTip": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\CombatParameters.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CombatParameters.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T02:03:05.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerMover.cs",
+              "DocumentMoniker": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Player\\PlayerMover.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMover.cs",
+              "ToolTip": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Player\\PlayerMover.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMover.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T01:24:31.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EnemyPatrolLogic.cs",
+              "DocumentMoniker": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Enemy\\EnemyPatrolLogic.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyPatrolLogic.cs",
+              "ToolTip": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Enemy\\EnemyPatrolLogic.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyPatrolLogic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T01:19:46.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EnemyPathPoints.cs",
+              "DocumentMoniker": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Enemy\\EnemyPathPoints.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyPathPoints.cs",
+              "ToolTip": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Enemy\\EnemyPathPoints.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyPathPoints.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T01:19:42.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FirstAidKit.cs",
+              "DocumentMoniker": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\FirstAidKit.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FirstAidKit.cs",
+              "ToolTip": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\FirstAidKit.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FirstAidKit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T02:52:04.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Player.cs",
+              "DocumentMoniker": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Player\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Player.cs",
+              "ToolTip": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Player\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Player.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAcwDoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T02:14:20.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EnemyMover.cs",
+              "DocumentMoniker": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Enemy\\EnemyMover.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyMover.cs",
+              "ToolTip": "G:\\Git\\2DPlatformerBattle\\2DPlatformerBattle\\Assets\\Scripts\\Enemy\\EnemyMover.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyMover.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T01:19:24.887Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
