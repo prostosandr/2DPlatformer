@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class EnemyRaycast : MonoBehaviour
+public class PlayerDefiner : MonoBehaviour
 {
     private float _distanceToPlayer;
 
@@ -18,7 +18,7 @@ public class EnemyRaycast : MonoBehaviour
 
         if (hit.collider != null)
         {
-            if (hit.transform == player.transform)
+            if (hit.collider.gameObject.TryGetComponent<Player>(out _))
             {
                 CanSeePlayer?.Invoke(player.transform);
             }

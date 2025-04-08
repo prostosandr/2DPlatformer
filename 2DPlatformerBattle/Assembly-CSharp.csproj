@@ -61,28 +61,29 @@
     <Analyzer Include="G:\Unity\Unity6\6000.0.42f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Damager.cs" />
     <Compile Include="Assets\Scripts\Spawner\MoneyPool.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyPathPoints.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerLootCollector.cs" />
     <Compile Include="Assets\Scripts\Player\GroundDetector.cs" />
-    <Compile Include="Assets\Scripts\CombatParameters.cs" />
+    <Compile Include="Assets\Scripts\Enemy\PlayerDefiner.cs" />
+    <Compile Include="Assets\Scripts\Loot\ILootParent.cs" />
     <Compile Include="Assets\Scripts\Ground.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMover.cs" />
     <Compile Include="Assets\Scripts\Enemy\PlayerDetector.cs" />
     <Compile Include="Assets\Scripts\Player\InputReader.cs" />
+    <Compile Include="Assets\Scripts\Loot\Money.cs" />
     <Compile Include="Assets\Scripts\Spawner\FirstAidKitsPool.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Health.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyPatrolLogic.cs" />
     <Compile Include="Assets\Scripts\Player\StateAnimator.cs" />
-    <Compile Include="Assets\Scripts\Spawner\LootParent.cs" />
     <Compile Include="Assets\Scripts\Spawner\Spawner.cs" />
-    <Compile Include="Assets\Scripts\Money.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAnimatorData.cs" />
     <Compile Include="Assets\Scripts\Spawner\LootSpawnPoints.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyMover.cs" />
-    <Compile Include="Assets\Scripts\Enemy\EnemyRaycast.cs" />
-    <Compile Include="Assets\Scripts\FirstAidKit.cs" />
+    <Compile Include="Assets\Scripts\Loot\FirstAidKit.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

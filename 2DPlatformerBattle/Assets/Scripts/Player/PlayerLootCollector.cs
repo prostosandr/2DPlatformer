@@ -7,7 +7,7 @@ public class PlayerLootCollector : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.TryGetComponent<LootParent>(out _))
+        if (collision.gameObject.TryGetComponent<ILootParent>(out _))
         {
             Component[] components = collision.gameObject.GetComponentsInChildren<Component>();
 

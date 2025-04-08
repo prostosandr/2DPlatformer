@@ -9,8 +9,29 @@ public class StateAnimator : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
     }
+    public enum States
+    {
+        Idle = 0,
+        Walk = 1,
+        Jump = 2
+    }
 
-    public void SetAnimation(int value)
+    public void SetIdleAnimation()
+    {
+        SetAnimation((int)States.Idle);
+    }
+
+    public void SetWalkAnimation()
+    {
+        SetAnimation((int)States.Walk);
+    }
+
+    public void SetJumpAnimation()
+    {
+        SetAnimation((int)States.Jump);
+    }
+
+    private void SetAnimation(int value)
     {
         _animator.SetInteger(PlayerAnimatorData.Params.State, value);
     }

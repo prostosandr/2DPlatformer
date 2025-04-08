@@ -1,13 +1,21 @@
+using System;
 using UnityEngine;
 
-public class CombatParameters : MonoBehaviour
+public class Health : MonoBehaviour
 {
     [SerializeField] private int _health;
-    [SerializeField] private int _damage;
     [SerializeField] private int _minHealth;
     [SerializeField] private int _maxHealth;
 
-    public int Damage => _damage;
+    public event Action Destroyed;
+
+    public void TakeHeal(int value)
+    {
+        _health += value;
+
+        if (_health > _maxHealth)
+            _health = _maxHealth;
+    }
 
     public void TakeDamage(int damage)
     {
@@ -16,15 +24,7 @@ public class CombatParameters : MonoBehaviour
         if (_health < _minHealth)
         {
             _health = _minHealth;
-            Destroy(gameObject);
+            Destroyed?.Invoke();
         }
-    }
-
-    public void TakeHeal(int value)
-    {
-        _health += value;
-
-        if (_health > _maxHealth)
-            _health = _maxHealth;
     }
 }

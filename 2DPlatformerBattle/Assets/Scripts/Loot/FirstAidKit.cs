@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class FirstAidKit : LootParent
+public class FirstAidKit : ILootParent
 {
     [SerializeField] private int _valueHeal;
 

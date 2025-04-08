@@ -17,8 +17,9 @@ GameObject:
   - component: {fileID: -1548829158732705362}
   - component: {fileID: 5838320329672435809}
   - component: {fileID: 1302608176259043586}
-  - component: {fileID: 4875874539398008748}
   - component: {fileID: 4759546891967599873}
+  - component: {fileID: 3518414579948745575}
+  - component: {fileID: 7132277574906697813}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -249,22 +250,6 @@ MonoBehaviour:
   _currentPathPoints: []
   _closeDistance: 0.5
   _pointNumber: 0
---- !u!114 &4875874539398008748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8509764170888629875}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 853e8030a9c574449affda6f194b07c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _health: 10
-  _damage: 1
-  _minHealth: 0
-  _maxHealth: 10
 --- !u!114 &4759546891967599873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,3 +263,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _minPlayerCollision: 0
+--- !u!114 &3518414579948745575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8509764170888629875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 038140f92d176764e82b61d7b9379267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 2
+--- !u!114 &7132277574906697813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8509764170888629875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a1bbcef06994ad42b47171c195f98c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 10
+  _minHealth: 0
+  _maxHealth: 10

@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(GroundDetector), typeof(InputReader), typeof(PlayerMover))]
-[RequireComponent(typeof(StateAnimator), typeof(CombatParameters))]
+[RequireComponent(typeof(StateAnimator), typeof(Health)), RequireComponent(typeof(Damager))]
 public class Player : MonoBehaviour
 {
     private const int Zero = 0;
@@ -10,28 +10,24 @@ public class Player : MonoBehaviour
     private InputReader _inputReader;
     private PlayerMover _mover;
     private StateAnimator _stateAnimator;
-    private CombatParameters _combatParameters;
     private PlayerLootCollector _playerLootCollector;
+    private Health _health;
+    private Damager _damager;
 
-    public int Damage => _combatParameters.Damage;
+    public int Damage => _damager.Damage;
 
     private void OnEnable()
     {
         _inputReader.IsJumping += Jump;
-        _playerLootCollector.Healed += Heal;
+        _playerLootCollector.Healed += TakeHeal;
+        _health.Destroyed += DeleteObject;
     }
 
     private void OnDisable()
     {
         _inputReader.IsJumping -= Jump;
-        _playerLootCollector.Healed -= Heal;
-    }
-
-    public enum States
-    {
-        Idle = 0,
-        Walk = 1,
-        Jump = 2
+        _playerLootCollector.Healed -= TakeHeal;
+        _health.Destroyed -= DeleteObject;
     }
 
     private void Awake()
@@ -40,8 +36,9 @@ public class Player : MonoBehaviour
         _inputReader = GetComponent<InputReader>();
         _mover = GetComponent<PlayerMover>();
         _stateAnimator = GetComponent<StateAnimator>();
-        _combatParameters = GetComponent<CombatParameters>();
         _playerLootCollector = GetComponent<PlayerLootCollector>();
+        _health = GetComponent<Health>();
+        _damager = GetComponent<Damager>();
     }
 
     private void FixedUpdate()
@@ -49,29 +46,34 @@ public class Player : MonoBehaviour
         if (_inputReader.Direction != Zero)
         {
             _mover.Move(_inputReader.Direction);
-            _stateAnimator.SetAnimation((int)States.Walk);
+            _stateAnimator.SetWalkAnimation();
         }
 
         if (_groundDetector.IsGround && _inputReader.Direction == Zero)
-            _stateAnimator.SetAnimation((int)States.Idle);
+            _stateAnimator.SetIdleAnimation();
 
         if (_groundDetector.IsGround == false)
-            _stateAnimator.SetAnimation((int)States.Jump);
+            _stateAnimator.SetJumpAnimation();
     }
 
     public void TakeDamage(int damage)
     {
-        _combatParameters.TakeDamage(damage);
+        _health.TakeDamage(damage);
     }
 
-    public void Heal(int value)
+    public void TakeHeal(int value)
     {
-        _combatParameters.TakeHeal(value);
+        _health.TakeHeal(value);
+    }
+
+    private void DeleteObject()
+    {
+        Destroy(gameObject);
     }
 
     private void Jump(bool isJump)
     {
         if (_groundDetector.IsGround)
             _mover.Jump();
-    }
+    }   
 }
