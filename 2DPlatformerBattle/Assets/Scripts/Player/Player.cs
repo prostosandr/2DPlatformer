@@ -1,7 +1,8 @@
 using UnityEngine;
 
 [RequireComponent(typeof(GroundDetector), typeof(InputReader), typeof(PlayerMover))]
-[RequireComponent(typeof(StateAnimator), typeof(Health)), RequireComponent(typeof(Damager))]
+[RequireComponent(typeof(StateAnimator), typeof(Health), typeof(Damager))]
+[RequireComponent(typeof(Vampirism))]
 public class Player : MonoBehaviour
 {
     private const int Zero = 0;
@@ -13,6 +14,7 @@ public class Player : MonoBehaviour
     private PlayerLootCollector _playerLootCollector;
     private Health _health;
     private Damager _damager;
+    private Vampirism _vampirism;
 
     public int Damage => _damager.Damage;
 
@@ -21,6 +23,7 @@ public class Player : MonoBehaviour
         _inputReader.IsJumping += Jump;
         _playerLootCollector.Healed += TakeHeal;
         _health.Destroyed += DeleteObject;
+        _vampirism.Vampirized += TakeHeal;
     }
 
     private void OnDisable()
@@ -28,6 +31,7 @@ public class Player : MonoBehaviour
         _inputReader.IsJumping -= Jump;
         _playerLootCollector.Healed -= TakeHeal;
         _health.Destroyed -= DeleteObject;
+        _vampirism.Vampirized -= TakeHeal;
     }
 
     private void Awake()
@@ -39,6 +43,12 @@ public class Player : MonoBehaviour
         _playerLootCollector = GetComponent<PlayerLootCollector>();
         _health = GetComponent<Health>();
         _damager = GetComponent<Damager>();
+        _vampirism = GetComponent<Vampirism>();
+    }
+
+    private void Update()
+    {
+        _vampirism.SetPositionEnemyDetector(transform);
     }
 
     private void FixedUpdate()

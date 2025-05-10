@@ -63,6 +63,11 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public void TakeDamage(int damage)
+    {
+        _health.TakeDamage(damage);
+    }
+
     private void DetectPlayer(Player player)
     {
         _player = player;
@@ -88,7 +93,6 @@ public class Enemy : MonoBehaviour
         _canAttack = false;
 
         _health.TakeDamage(_player.Damage);
-
         _player.TakeDamage(_damager.Damage);
 
         yield return wait;
