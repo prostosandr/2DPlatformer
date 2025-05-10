@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(EnemyPatrolLogic), typeof(EnemyMover), typeof(PlayerDefiner))]
@@ -5,6 +6,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private float _closeDistanceToPlayer;
+    [SerializeField] private float _attackCooldown;
 
     private PlayerDetector _playerDetector;
     private EnemyPatrolLogic _patrolLogic;
@@ -13,6 +15,8 @@ public class Enemy : MonoBehaviour
     private Health _health;
     private Damager _damager;
     private Player _player;
+    private Coroutine _coroutine;
+    private bool _canAttack;
 
     private void Awake()
     {
@@ -22,6 +26,11 @@ public class Enemy : MonoBehaviour
         _playerDetector = GetComponent<PlayerDetector>();
         _health = GetComponent<Health>();
         _damager = GetComponent<Damager>();
+    }
+
+    private void Start()
+    {
+        _canAttack = true;
     }
 
     private void OnEnable()
@@ -68,11 +77,24 @@ public class Enemy : MonoBehaviour
 
     private void Battle()
     {
-        if (_player != null)
-        {
-            _health.TakeDamage(_player.Damage);
+        if (_player != null && _canAttack)
+            _coroutine = StartCoroutine(AttackRoutine());
+    }
 
-            _player.TakeDamage(_damager.Damage);
-        }
-    } 
+    private IEnumerator AttackRoutine()
+    {
+        var wait = new WaitForSeconds(_attackCooldown);
+
+        _canAttack = false;
+
+        _health.TakeDamage(_player.Damage);
+
+        _player.TakeDamage(_damager.Damage);
+
+        yield return wait;
+
+        _canAttack = true;
+
+        StopCoroutine(_coroutine);
+    }
 }

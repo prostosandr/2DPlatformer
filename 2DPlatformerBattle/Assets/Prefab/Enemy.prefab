@@ -222,6 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _closeDistanceToPlayer: 0.5
+  _attackCooldown: 0.3
 --- !u!114 &5838320329672435809
 MonoBehaviour:
   m_ObjectHideFlags: 0
