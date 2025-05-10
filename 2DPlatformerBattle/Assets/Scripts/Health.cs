@@ -7,10 +7,6 @@ public class Health : MonoBehaviour
     [SerializeField] private int _minHealth;
     [SerializeField] private int _maxHealth;
 
-    public int CurrentHealth => _health;
-    public int MinHealth => _minHealth;
-    public int MaxHealth => _maxHealth;
-
     public event Action Destroyed;
 
     public void TakeHeal(int value)
@@ -25,7 +21,7 @@ public class Health : MonoBehaviour
     {
         _health -= damage;
 
-        if (_health <= _minHealth)
+        if (_health < _minHealth)
         {
             _health = _minHealth;
             Destroyed?.Invoke();
