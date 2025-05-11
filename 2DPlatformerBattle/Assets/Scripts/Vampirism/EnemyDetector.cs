@@ -6,7 +6,7 @@ public class EnemyDetector : MonoBehaviour
 {
     private HashSet<Enemy> _enemys;
 
-    public event Action<HashSet<Enemy>> IsEnemy;
+    public event Action<HashSet<Enemy>> EnemysChanged;
 
     private void Awake()
     {
@@ -21,7 +21,7 @@ public class EnemyDetector : MonoBehaviour
         {
             _enemys.Add(enemy);
 
-            IsEnemy?.Invoke(_enemys);
+            EnemysChanged?.Invoke(new HashSet<Enemy>(_enemys));
         }
     }
 
@@ -31,12 +31,12 @@ public class EnemyDetector : MonoBehaviour
         {
             _enemys.Remove(enemy);
 
-            IsEnemy?.Invoke(_enemys);
+            EnemysChanged?.Invoke(new HashSet<Enemy>(_enemys));
         }
     }
 
-    public void SetPosition(Transform position)
+    public void SetPosition(Vector3 position)
     {
-        transform.position = position.position;
+        transform.position = position;
     }
 }

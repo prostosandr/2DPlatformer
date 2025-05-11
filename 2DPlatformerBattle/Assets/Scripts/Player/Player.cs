@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        _vampirism.SetPositionEnemyDetector(transform);
+        _vampirism.SetPositionEnemyDetector(transform.position);
     }
 
     private void FixedUpdate()

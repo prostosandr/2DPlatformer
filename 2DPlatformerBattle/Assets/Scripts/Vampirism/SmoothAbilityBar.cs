@@ -38,9 +38,9 @@ public class SmoothAbilityBar : MonoBehaviour
         {
             elapsed += Time.deltaTime;
 
-            float thridParameter = Mathf.Clamp01(elapsed / _smoothDuration);
+            float progress = Mathf.Clamp01(elapsed / _smoothDuration);
 
-            _slider.value = Mathf.Lerp(currentSliderValue, currentValue / _maxValue, thridParameter);
+            _slider.value = Mathf.Lerp(currentSliderValue, currentValue / _maxValue, progress);
 
             yield return null;
         }

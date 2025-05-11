@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "D:\\Git\\2DPlatformer\\2DPlatformerBattle\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|D:\\Git\\2DPlatformer\\2DPlatformerBattle\\assets\\scripts\\vampirism\\vampirism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\vampirism\\vampirism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|D:\\Git\\2DPlatformer\\2DPlatformerBattle\\assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|d:\\git\\2dplatformer\\2dplatformerbattle\\assets\\scripts\\vampirism\\vampirism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\vampirism\\vampirism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|d:\\git\\2dplatformer\\2dplatformerbattle\\assets\\scripts\\vampirism\\smoothabilitybar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|D:\\Git\\2DPlatformer\\2DPlatformerBattle\\assets\\scripts\\vampirism\\smoothabilitybar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\vampirism\\smoothabilitybar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|D:\\Git\\2DPlatformer\\2DPlatformerBattle\\assets\\scripts\\vampirism\\vampirismbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\vampirism\\vampirismbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|D:\\Git\\2DPlatformer\\2DPlatformerBattle\\assets\\scripts\\vampirism\\enemydetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\vampirism\\enemydetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|D:\\Git\\2DPlatformer\\2DPlatformerBattle\\assets\\scripts\\vampirism\\vampirismbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2574E1E9-2A7A-8990-C567-A695B992A492}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\vampirism\\vampirismbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -40,14 +40,13 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Vampirism\\SmoothAbilityBar.cs",
               "ToolTip": "D:\\Git\\2DPlatformer\\2DPlatformerBattle\\Assets\\Scripts\\Vampirism\\SmoothAbilityBar.cs",
               "RelativeToolTip": "Assets\\Scripts\\Vampirism\\SmoothAbilityBar.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowCgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T18:58:56.644Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T18:58:56.644Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "VampirismButton.cs",
               "DocumentMoniker": "D:\\Git\\2DPlatformer\\2DPlatformerBattle\\Assets\\Scripts\\Vampirism\\VampirismButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Vampirism\\VampirismButton.cs",
@@ -55,47 +54,44 @@
               "RelativeToolTip": "Assets\\Scripts\\Vampirism\\VampirismButton.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T17:57:14.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T17:57:14.145Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Vampirism.cs",
               "DocumentMoniker": "D:\\Git\\2DPlatformer\\2DPlatformerBattle\\Assets\\Scripts\\Vampirism\\Vampirism.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Vampirism\\Vampirism.cs",
               "ToolTip": "D:\\Git\\2DPlatformer\\2DPlatformerBattle\\Assets\\Scripts\\Vampirism\\Vampirism.cs",
               "RelativeToolTip": "Assets\\Scripts\\Vampirism\\Vampirism.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAA4wBEAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAYwHoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T17:56:50.648Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "EnemyDetector.cs",
               "DocumentMoniker": "D:\\Git\\2DPlatformer\\2DPlatformerBattle\\Assets\\Scripts\\Vampirism\\EnemyDetector.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Vampirism\\EnemyDetector.cs",
               "ToolTip": "D:\\Git\\2DPlatformer\\2DPlatformerBattle\\Assets\\Scripts\\Vampirism\\EnemyDetector.cs",
               "RelativeToolTip": "Assets\\Scripts\\Vampirism\\EnemyDetector.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAgAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T18:03:52.092Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T18:03:52.092Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Player.cs",
               "DocumentMoniker": "D:\\Git\\2DPlatformer\\2DPlatformerBattle\\Assets\\Scripts\\Player\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Player.cs",
               "ToolTip": "D:\\Git\\2DPlatformer\\2DPlatformerBattle\\Assets\\Scripts\\Player\\Player.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\Player.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowCAAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwDEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T13:48:54.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T13:48:54.321Z"
             }
           ]
         }

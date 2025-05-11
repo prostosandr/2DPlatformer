@@ -14,8 +14,6 @@ public class Vampirism : MonoBehaviour
     private Coroutine _coroutineActivated;
     private Coroutine _coroutineDeactivated;
     private HashSet<Enemy> _enemys;
-    private Enemy _currentEnemy;
-    private float _minDistance;
 
     public event Action<int> Vampirized;
 
@@ -24,22 +22,21 @@ public class Vampirism : MonoBehaviour
         _bar.SetMaxValue(_timeAbility);
 
         _enemys = new HashSet<Enemy>();
-        _minDistance = 100000000f;
     }
 
     private void OnEnable()
     {
         _abilityButton.OnClicked += StartAbility;
-        _enemyDetector.IsEnemy += SetEnemys;
+        _enemyDetector.EnemysChanged += SetEnemys;
     }
 
     private void OnDisable()
     {
         _abilityButton.OnClicked -= StartAbility;
-        _enemyDetector.IsEnemy -= SetEnemys;
+        _enemyDetector.EnemysChanged -= SetEnemys;
     }
 
-    public void SetPositionEnemyDetector(Transform position)
+    public void SetPositionEnemyDetector(Vector3 position)
     {
         _enemyDetector.SetPosition(position);
     }
@@ -80,8 +77,6 @@ public class Vampirism : MonoBehaviour
         int oneSecond = 1;
         var wait = new WaitForSeconds(oneSecond);
 
-        _minDistance = 1000000000000f;
-
         for (int i = 0; i <= _timeAbility; i++)
         {
             _bar.UpdateDrawing(i);
@@ -101,28 +96,36 @@ public class Vampirism : MonoBehaviour
 
     private void DrinkBlood()
     {
-        if (_enemys.Count != 0)
+        Enemy nearestEnemy = GetNearestEnemy();
+
+        if (nearestEnemy != null)
         {
-            foreach (Enemy enemy in _enemys)
+            nearestEnemy.TakeDamage(_damage);
+            Vampirized?.Invoke(_damage);
+        }
+    }
+
+    private Enemy GetNearestEnemy()
+    {
+        Enemy nearestEnemy = null;
+
+        float minDistance = Mathf.Infinity;
+
+        foreach (Enemy enemy in _enemys)
+        {
+            if (enemy == null)
+                continue;
+
+            float currentDistance = Vector2.Distance(transform.position, enemy.transform.position);
+
+            if (currentDistance < minDistance)
             {
-                float currentDistance = Vector2.Distance(transform.position, enemy.transform.position);
-
-                if (currentDistance < _minDistance)
-                {
-                    _minDistance = currentDistance;
-                    _currentEnemy = enemy;
-                }
-
-                if (enemy == _currentEnemy)
-                {
-                    enemy.TakeDamage(_damage);
-                    Vampirized?.Invoke(_damage);
-
-                    if (enemy == null)
-                        break;
-                }
+                minDistance = currentDistance;
+                nearestEnemy = enemy;
             }
         }
+
+        return nearestEnemy;
     }
 }
 

@@ -494,7 +494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 038140f92d176764e82b61d7b9379267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 20
+  _damage: 10
 --- !u!114 &116955195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -526,7 +526,7 @@ MonoBehaviour:
   _abilityButton: {fileID: 1169777614}
   _bar: {fileID: 2139604521}
   _timeAbility: 6
-  _damage: 5
+  _damage: 20
 --- !u!1 &148601503
 GameObject:
   m_ObjectHideFlags: 0
@@ -3861,7 +3861,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.3067017, y: -0.122802734, z: -3.0190117}
-  m_LocalScale: {x: 16.417452, y: 16.417452, z: 16.417452}
+  m_LocalScale: {x: 5.0120134, y: 5.0120134, z: 5.0120134}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 148601504}
