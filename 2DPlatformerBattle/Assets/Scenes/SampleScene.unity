@@ -524,7 +524,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemyDetector: {fileID: 1710494062}
   _abilityButton: {fileID: 1169777614}
-  _bar: {fileID: 2139604521}
+  _abilityBar: {fileID: 2139604522}
+  _rendererBar: {fileID: 2139604521}
   _timeAbility: 6
   _damage: 20
 --- !u!1 &148601503
@@ -3861,7 +3862,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.3067017, y: -0.122802734, z: -3.0190117}
-  m_LocalScale: {x: 5.0120134, y: 5.0120134, z: 5.0120134}
+  m_LocalScale: {x: 4.7069764, y: 4.7069764, z: 4.7069764}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 148601504}
@@ -5104,6 +5105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2139604519}
   - component: {fileID: 2139604520}
+  - component: {fileID: 2139604522}
   - component: {fileID: 2139604521}
   m_Layer: 5
   m_Name: TimeAbilityBar
@@ -5193,10 +5195,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 2139604518}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c4435fe874260842b3af524f74d530b, type: 3}
+  m_Script: {fileID: 11500000, guid: 5cbe66e3ca9e06342914e4da2366b4cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _smoothDuration: 1
+--- !u!114 &2139604522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139604518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad24aad965cc1094894354fb0832cdb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3170750941103568931
 PrefabInstance:
   m_ObjectHideFlags: 0

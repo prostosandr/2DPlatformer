@@ -18,6 +18,8 @@ public class Enemy : MonoBehaviour
     private Coroutine _coroutine;
     private bool _canAttack;
 
+    public int CurrentHealth => _health.CurrentHealth;
+
     private void Awake()
     {
         _patrolLogic = GetComponent<EnemyPatrolLogic>();

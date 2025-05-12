@@ -7,7 +7,7 @@ public class VampirismButton : MonoBehaviour
 {
     private Button _button;
 
-    public event Action OnClicked;
+    public event Action Clicked;
 
     private void Awake()
     {
@@ -26,11 +26,16 @@ public class VampirismButton : MonoBehaviour
 
     private void Click()
     {
-        OnClicked?.Invoke();
+        Clicked?.Invoke();
     }
     
-    public void SetInteractable(bool IsInteracted)
+    public void EnableInteractable()
     {
-        _button.interactable = IsInteracted;
+        _button.interactable = true;
+    }
+
+    public void DisableInteractable()
+    {
+        _button.interactable = false;
     }
 }

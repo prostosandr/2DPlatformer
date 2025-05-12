@@ -7,33 +7,38 @@ public class Vampirism : MonoBehaviour
 {
     [SerializeField] private EnemyDetector _enemyDetector;
     [SerializeField] private VampirismButton _abilityButton;
-    [SerializeField] private SmoothAbilityBar _bar;
+    [SerializeField] private AbilityBar _abilityBar;
+    [SerializeField] private RendererAbilityBar _rendererBar;
+
     [SerializeField] private int _timeAbility;
     [SerializeField] private int _damage;
 
-    private Coroutine _coroutineActivated;
-    private Coroutine _coroutineDeactivated;
     private HashSet<Enemy> _enemys;
 
     public event Action<int> Vampirized;
 
     private void Awake()
     {
-        _bar.SetMaxValue(_timeAbility);
-
         _enemys = new HashSet<Enemy>();
+    }
+
+    private void Start()
+    {
+        _abilityBar.SetCurrentValue(_timeAbility);
     }
 
     private void OnEnable()
     {
-        _abilityButton.OnClicked += StartAbility;
+        _abilityButton.Clicked += StartAbility;
         _enemyDetector.EnemysChanged += SetEnemys;
+        _rendererBar.Rendered += SetAbilityBarValue;
     }
 
     private void OnDisable()
     {
-        _abilityButton.OnClicked -= StartAbility;
+        _abilityButton.Clicked -= StartAbility;
         _enemyDetector.EnemysChanged -= SetEnemys;
+        _rendererBar.Rendered -= SetAbilityBarValue;
     }
 
     public void SetPositionEnemyDetector(Vector3 position)
@@ -41,14 +46,19 @@ public class Vampirism : MonoBehaviour
         _enemyDetector.SetPosition(position);
     }
 
+    private void SetAbilityBarValue(float value)
+    {
+        _abilityBar.SetCurrentValue(value);
+    }
+
     private void StartAbility()
     {
         _enemys.Clear();
 
         _enemyDetector.gameObject.SetActive(true);
-        _abilityButton.SetInteractable(false);
+        _abilityButton.DisableInteractable();
 
-        _coroutineActivated = StartCoroutine(Vampirize());
+        StartCoroutine(Vampirize());
     }
 
     private IEnumerator Vampirize()
@@ -58,7 +68,7 @@ public class Vampirism : MonoBehaviour
 
         for (int i = _timeAbility; i >= 0; i--)
         {
-            _bar.UpdateDrawing(i);
+            _rendererBar.UpdateValue(i, _abilityBar.Value, _timeAbility);
 
             DrinkBlood();
 
@@ -67,26 +77,19 @@ public class Vampirism : MonoBehaviour
 
         _enemyDetector.gameObject.SetActive(false);
 
-        _coroutineDeactivated = StartCoroutine(ReloadVampirism());
-
-        StopCoroutine(_coroutineActivated);
+        StartCoroutine(ReloadVampirism(wait));
     }
 
-    private IEnumerator ReloadVampirism()
+    private IEnumerator ReloadVampirism(WaitForSeconds wait)
     {
-        int oneSecond = 1;
-        var wait = new WaitForSeconds(oneSecond);
-
         for (int i = 0; i <= _timeAbility; i++)
         {
-            _bar.UpdateDrawing(i);
+            _rendererBar.UpdateValue(i, _abilityBar.Value, _timeAbility);
 
             yield return wait;
         }
 
-        _abilityButton.SetInteractable(true);
-
-        StopCoroutine(_coroutineDeactivated);
+        _abilityButton.EnableInteractable();
     }
 
     private void SetEnemys(HashSet<Enemy> enemys)
@@ -100,9 +103,21 @@ public class Vampirism : MonoBehaviour
 
         if (nearestEnemy != null)
         {
-            nearestEnemy.TakeDamage(_damage);
-            Vampirized?.Invoke(_damage);
+            nearestEnemy.TakeDamage(GetCurrentDamage(nearestEnemy.CurrentHealth));
+            Vampirized?.Invoke(GetCurrentDamage(nearestEnemy.CurrentHealth));
         }
+    }
+
+    private int GetCurrentDamage(int enemyCurrentHealth)
+    {
+        int newDamage = _damage;
+
+        if (enemyCurrentHealth < _damage)
+        {
+            newDamage = enemyCurrentHealth;
+        }
+
+        return newDamage;
     }
 
     private Enemy GetNearestEnemy()

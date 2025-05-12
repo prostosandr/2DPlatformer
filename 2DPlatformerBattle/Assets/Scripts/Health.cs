@@ -32,7 +32,7 @@ public class Health : MonoBehaviour
         {
             _health -= damage;
 
-            if (_health < _minHealth)
+            if (_health <= _minHealth)
             {
                 _health = _minHealth;
                 Destroyed?.Invoke();
